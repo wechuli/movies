@@ -11,27 +11,13 @@ client.indices
           format: "yyyy"
         },
         Ratings: {
-          type: "nested",
-          properties: {
-            Source: {
-              type: "text"
-            },
-            Value: {
-              type: "float"
-            }
-          }
+          type: "nested"
         },
         Metascore: {
           type: "integer"
         },
         imdbRating: {
           type: "float"
-        },
-        imdbVotes: {
-          type: "integer"
-        },
-        BoxOffice: {
-          type: "integer"
         }
       }
     }
