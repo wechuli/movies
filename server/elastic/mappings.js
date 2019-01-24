@@ -18,9 +18,6 @@ client.indices
         revenue: {
           type: "float"
         },
-        belongs_to_collection: {
-          type: "nested"
-        },
         production_companies: {
           type: "nested"
         },
