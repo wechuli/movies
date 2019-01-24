@@ -6,6 +6,7 @@ const client = require("./connection");
 // async uploadData(){
 
 // }
+console.log(testData.length)
 const result = [];
 const uploadData = () => {
   testData.forEach(data => {
@@ -32,7 +33,7 @@ const uploadData = () => {
         data.director = response.data.Director;
         data.language = response.data.Language;
         data.production = response.data.Production;
-        console.log(data);
+       // console.log(data);
         //result.push(response.data);
         client
           .index({
