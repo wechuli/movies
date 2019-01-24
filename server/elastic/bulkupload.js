@@ -6,9 +6,9 @@ const client = require("./connection");
 // async uploadData(){
 
 // }
-console.log(testData.length)
+//console.log(testData.length);
 
-const uploadData = () => {
+const uploadData = async () => {
   testData.forEach(data => {
     //
     //console.log(data);
@@ -33,7 +33,7 @@ const uploadData = () => {
         data.director = response.data.Director;
         data.language = response.data.Language;
         data.production = response.data.Production;
-       // console.log(data);
+        // console.log(data);
         //result.push(response.data);
         client
           .index({
@@ -43,8 +43,8 @@ const uploadData = () => {
             ignore: [404],
             body: data
           })
-          .then(response => console.log(response))
-          .catch(error => console.log(error));
+          .then(response => {})
+          .catch(error => {});
       })
       .catch(error => {
         console.log(`Some kind of error occurred ${error}`);
@@ -53,4 +53,3 @@ const uploadData = () => {
 };
 
 uploadData();
-
