@@ -7,7 +7,7 @@ const client = require("./connection");
 
 // }
 console.log(testData.length)
-const result = [];
+
 const uploadData = () => {
   testData.forEach(data => {
     //
@@ -53,4 +53,4 @@ const uploadData = () => {
 };
 
 uploadData();
-console.log(result);
+
