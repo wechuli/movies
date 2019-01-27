@@ -1,7 +1,7 @@
 //const allData = require('./convertcsv.json');
 const axios = require("axios");
 const testData = require("./staging.json");
-// const testData = require("./convertcsv.json");
+//const testData = require("./convertcsv.json");
 const client = require("./connection");
 
 // async uploadData(){
