@@ -17,7 +17,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 
 
-app.use("/", mainRouter);
+app.use("/movies", mainRouter);
 
 app.use((req, res) => {
   res.status(404).json({ error: "Resource not found" });

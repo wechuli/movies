@@ -1,21 +1,14 @@
 import React from "react";
+import Carousel from "./Carousel";
 
 const Hero = () => {
   return (
-    <React.Fragment>
-      <section className="hero is-primary is-medium">
-        <div className="hero-head">
-     
-        </div>
-
-        <div className="hero-body">
-          <div className="container has-text-centered">
-            <h1 className="title">Movies</h1>
-            <h2 className="subtitle">Your One Stop Entertainment Platform</h2>
-          </div>
-        </div>
-      </section>
-    </React.Fragment>
+    <div style={{ position: "relative" }}>
+      <Carousel />
+      <div className="artist_name">
+        <div className="wrapper">Movies</div>
+      </div>
+    </div>
   );
 };
 

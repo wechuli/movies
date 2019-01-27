@@ -27,7 +27,7 @@ const uploadData = async () => {
     axios
       .get(`http://www.omdbapi.com/?i=${data.imdb_id}&apikey=74fd0721`)
       .then(response => {
-        console.log(response.data);
+        //console.log(response.data);
         data.poster = response.data.Poster;
         data.categories = response.data.Genre;
         data.actors = response.data.Actors;

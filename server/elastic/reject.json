@@ -1,0 +1,28 @@
+[
+   {
+   "adult": "False",
+   "belongs_to_collection": "",
+   "budget": "0",
+   "genres": "[{'id': 12, 'name': 'Adventure'}, {'id': 16, 'name': 'Animation'}, {'id': 35, 'name': 'Comedy'}]",
+   "homepage": "",
+   "id": "41581",
+   "imdb_id": "tt0219207",
+   "original_language": "ru",
+   "original_title": "Незнайка на Луне",
+   "overview": "They are neither adults nor kids - somewhere in between, living in their separate boys and girls cozy dorms and doing whatever they love to do - inventors, artists, poets, mechanists, scientists and....just dreamers! These enthusiastic and creative folks enjoy their half-adult, half-childish lifestyles and entertain each other with the different tricks and practical jokes. The main hero stands out of the crowd - while the others try to live the normal life socializing as they can, he can never be rested, always coming up with the different unpredictable and unexpected moves, which always make viewers burst with laugh....",
+   "popularity": "0.507336",
+   "poster_path": "/hwNYUSbJhMA92eyw1OlAJOy3gd4.jpg",
+   "production_companies": "[{'name': 'ZAO Studia \"F.A.F\"', 'id': 72996}]",
+   "production_countries": "[{'iso_3166_1': 'RU', 'name': 'Russia'}]",
+   "release_date": "1997-05-01",
+   "revenue": 0,
+   "runtime": 151,
+   "spoken_languages": "[{'iso_639_1': 'ru', 'name': 'Pусский'}]",
+   "status": "Released",
+   "tagline": "",
+   "title": "Dunno on the Moon",
+   "video": false,
+   "vote_average": 7,
+   "vote_count": 6
+ }
+]

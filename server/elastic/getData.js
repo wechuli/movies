@@ -5,6 +5,7 @@ client
     index: "movies",
     type: "all",
     body: {
+      size: 10,
       query: {
         match_all: {}
       }
