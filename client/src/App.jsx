@@ -9,8 +9,8 @@ const App = ()=>{
   return(
 <React.Fragment>
   <NavBar/>
-  <Home2/>
-  {/* <Home/> */}
+  <Home/>
+  {/* <Home2/> */}
 
 </React.Fragment>
   )
