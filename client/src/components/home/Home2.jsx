@@ -2,8 +2,9 @@ import React, { useState, useEffect } from "react";
 import Hero from "../layout/Hero";
 import MovieCard from "./MovieCard";
 import axios from "axios";
+import InfiniteScroll from "react-infinite-scroll-component";
 
-const Home = () => {
+const Home2 = () => {
   const [movies, setMovies] = useState([]);
   const [count, setCount] = useState(0);
   const [searchTerm, setSearchTerm] = useState("");
@@ -58,7 +59,7 @@ const Home = () => {
               onChange={changeTerm}
               type="text"
               className="input"
-              placeholder='Search movie,actors,directorsloca'
+              placeholder="Search movie,actors,directorsloca"
             />
             <button className="button is-dark m-t-sm">Search</button>
           </div>
@@ -69,14 +70,26 @@ const Home = () => {
             <code>Filter</code>
           </div>
           <div className="column">
+          <InfiniteScroll 
+              dataLength={movies.length} //This is important field to render the next data
+              next={() => setCount(count + 12)}
+              hasMore={true}
+              loader={<h4>Loading...</h4>}
+              endMessage={
+                <p style={{textAlign: 'center'}}>
+                  <b>Yay! You have seen it all</b>
+                </p>}
+              >
             <div className="columns is-multiline">
-              {movies.map(movie => {
-                return (
-                  <div key={movie._id} className="column is-4">
-                    <MovieCard {...movie} />
-                  </div>
-                );
-              })}
+           
+                {movies.map(movie => {
+                  return (
+                    <div key={movie._id} className="column is-4">
+                      <MovieCard {...movie} />
+                    </div>
+                  );
+                })}
+            
 
               <div className="column is-12 is-centered">
                 <button
@@ -87,6 +100,7 @@ const Home = () => {
                 </button>
               </div>
             </div>
+            </InfiniteScroll>
           </div>
         </div>
       </div>
@@ -94,4 +108,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Home2;
