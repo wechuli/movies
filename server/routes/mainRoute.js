@@ -13,7 +13,7 @@ router.get("/:count", async (req, res) => {
       index: "movies",
       body: {
         from: count,
-        size: 12,
+        size: 21,
         query: {
           match_all: {}
         }

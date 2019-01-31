@@ -58,7 +58,7 @@ const Home = () => {
               onChange={changeTerm}
               type="text"
               className="input"
-              placeholder='Search movie,actors,directorsloca'
+              placeholder="Search movie,actors,directorsloca"
             />
             <button className="button is-dark m-t-sm">Search</button>
           </div>
@@ -77,15 +77,16 @@ const Home = () => {
                   </div>
                 );
               })}
-
-              <div className="column is-12 is-centered">
-                <button
-                  onClick={() => setCount(count + 12)}
-                  className="button is-primary is-outlined"
-                >
-                  Load More
-                </button>
-              </div>
+              {!searchTerm ? (
+                <div className="column is-12 is-centered">
+                  <button
+                    onClick={() => setCount(count + 21)}
+                    className="button is-primary is-outlined"
+                  >
+                    Load More
+                  </button>
+                </div>
+              ) : null}
             </div>
           </div>
         </div>

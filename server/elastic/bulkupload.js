@@ -44,13 +44,16 @@ const uploadData = async () => {
             ignore: [404],
             body: data
           })
-          .then(response => {})
+          .then(response => {
+
+          })
           .catch(error => {});
       })
       .catch(error => {
         console.log(`Some kind of error occurred ${error}`);
       });
   });
+  console.log('success');
 };
 
 uploadData();
