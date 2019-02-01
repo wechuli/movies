@@ -80,7 +80,7 @@ const Home = () => {
               {!searchTerm ? (
                 <div className="column is-12 is-centered">
                   <button
-                    onClick={() => setCount(count + 21)}
+                    onClick={() => setCount((count)=>count + 21)}
                     className="button is-primary is-outlined"
                   >
                     Load More
