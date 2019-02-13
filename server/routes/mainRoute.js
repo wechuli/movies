@@ -36,6 +36,7 @@ router.get("/movie/:movie", async (req, res) => {
           multi_match: {
             
             query: movie,
+            minimum_should_match:2,
             fields: ["title", "actors", "director"]
           }
         }
