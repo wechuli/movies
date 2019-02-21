@@ -1,7 +1,7 @@
 //const allData = require('./convertcsv.json');
 const axios = require("axios");
-const testData = require("./staging.json");
-//const testData = require("./convertcsv.json");
+// const testData = require("./staging.json");
+const testData = require("./convertcsv.json");
 const client = require("./connection");
 
 // async uploadData(){
@@ -34,7 +34,7 @@ const uploadData = async () => {
         data.director = response.data.Director;
         data.language = response.data.Language;
         data.production = response.data.Production;
-        // console.log(data);
+        console.log(data);
         //result.push(response.data);
         client
           .index({
@@ -45,9 +45,9 @@ const uploadData = async () => {
             body: data
           })
           .then(response => {
-
+console.log(response);
           })
-          .catch(error => {});
+          .catch(error =>console.log(error));
       })
       .catch(error => {
         console.log(`Some kind of error occurred ${error}`);

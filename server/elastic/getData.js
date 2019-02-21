@@ -5,11 +5,11 @@ client
     index: "movies",
     type: "all",
     body: {
-      size: 10,
+      size: 8000,
       query: {
         match_all: {}
       }
     }
   })
-  .then(response => console.log(response.hits.hits))
+  .then(response => console.log(response.hits.hits.length))
   .catch(error => console.log(error));

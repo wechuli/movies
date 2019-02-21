@@ -2,7 +2,7 @@ const client = require("./connection");
 
 client.indices
   .create({
-    index: "moviestoo"
+    index: "windturbine"
   })
   .then(response => console.log("Index successfully created", response))
   .catch(error =>
